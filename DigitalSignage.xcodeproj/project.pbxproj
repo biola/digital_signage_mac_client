@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D56A069B169E49C700DA6546 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56A069A169E49C700DA6546 /* Cocoa.framework */; };
+		D56A06A5169E49C700DA6546 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D56A06A3169E49C700DA6546 /* InfoPlist.strings */; };
+		D56A06A7169E49C700DA6546 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D56A06A6169E49C700DA6546 /* main.m */; };
+		D56A06AB169E49C700DA6546 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D56A06A9169E49C700DA6546 /* Credits.rtf */; };
+		D56A06AE169E49C700DA6546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D56A06AD169E49C700DA6546 /* AppDelegate.m */; };
+		D56A06B1169E49C800DA6546 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56A06AF169E49C800DA6546 /* MainMenu.xib */; };
+		D56A06E1169E5C0000DA6546 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56A06E0169E5C0000DA6546 /* WebKit.framework */; };
+		D56A06F8169E8CB200DA6546 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56A06F6169E8CB200DA6546 /* Preferences.xib */; };
+		D5866834169FCE6400712129 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D5866833169FCE6400712129 /* icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D56A0696169E49C700DA6546 /* DigitalSignage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSignage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56A069A169E49C700DA6546 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D56A069D169E49C700DA6546 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D56A069E169E49C700DA6546 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D56A069F169E49C700DA6546 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D56A06A2169E49C700DA6546 /* DigitalSignage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalSignage-Info.plist"; sourceTree = "<group>"; };
+		D56A06A4169E49C700DA6546 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D56A06A6169E49C700DA6546 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D56A06A8169E49C700DA6546 /* DigitalSignage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalSignage-Prefix.pch"; sourceTree = "<group>"; };
+		D56A06AA169E49C700DA6546 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D56A06AC169E49C700DA6546 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D56A06AD169E49C700DA6546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D56A06B0169E49C800DA6546 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D56A06B8169E49C800DA6546 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D56A06E0169E5C0000DA6546 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D56A06E2169E7BF800DA6546 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		D56A06F6169E8CB200DA6546 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		D5866833169FCE6400712129 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D56A0693169E49C700DA6546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56A06E1169E5C0000DA6546 /* WebKit.framework in Frameworks */,
+				D56A069B169E49C700DA6546 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D56A068B169E49C700DA6546 = {
+			isa = PBXGroup;
+			children = (
+				D5866833169FCE6400712129 /* icon.icns */,
+				D56A06A0169E49C700DA6546 /* DigitalSignage */,
+				D56A0699169E49C700DA6546 /* Frameworks */,
+				D56A0697169E49C700DA6546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D56A0697169E49C700DA6546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D56A0696169E49C700DA6546 /* DigitalSignage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D56A0699169E49C700DA6546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D56A06E2169E7BF800DA6546 /* PreferencePanes.framework */,
+				D56A06E0169E5C0000DA6546 /* WebKit.framework */,
+				D56A069A169E49C700DA6546 /* Cocoa.framework */,
+				D56A06B8169E49C800DA6546 /* SenTestingKit.framework */,
+				D56A069C169E49C700DA6546 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D56A069C169E49C700DA6546 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D56A069D169E49C700DA6546 /* AppKit.framework */,
+				D56A069E169E49C700DA6546 /* CoreData.framework */,
+				D56A069F169E49C700DA6546 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D56A06A0169E49C700DA6546 /* DigitalSignage */ = {
+			isa = PBXGroup;
+			children = (
+				D56A06AC169E49C700DA6546 /* AppDelegate.h */,
+				D56A06AD169E49C700DA6546 /* AppDelegate.m */,
+				D56A06AF169E49C800DA6546 /* MainMenu.xib */,
+				D56A06F6169E8CB200DA6546 /* Preferences.xib */,
+				D56A06A1169E49C700DA6546 /* Supporting Files */,
+			);
+			path = DigitalSignage;
+			sourceTree = "<group>";
+		};
+		D56A06A1169E49C700DA6546 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D56A06A2169E49C700DA6546 /* DigitalSignage-Info.plist */,
+				D56A06A3169E49C700DA6546 /* InfoPlist.strings */,
+				D56A06A6169E49C700DA6546 /* main.m */,
+				D56A06A8169E49C700DA6546 /* DigitalSignage-Prefix.pch */,
+				D56A06A9169E49C700DA6546 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D56A0695169E49C700DA6546 /* DigitalSignage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56A06C8169E49C800DA6546 /* Build configuration list for PBXNativeTarget "DigitalSignage" */;
+			buildPhases = (
+				D56A0692169E49C700DA6546 /* Sources */,
+				D56A0693169E49C700DA6546 /* Frameworks */,
+				D56A0694169E49C700DA6546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalSignage;
+			productName = DigitalSignage;
+			productReference = D56A0696169E49C700DA6546 /* DigitalSignage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D56A068D169E49C700DA6546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Biola University";
+			};
+			buildConfigurationList = D56A0690169E49C700DA6546 /* Build configuration list for PBXProject "DigitalSignage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D56A068B169E49C700DA6546;
+			productRefGroup = D56A0697169E49C700DA6546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D56A0695169E49C700DA6546 /* DigitalSignage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D56A0694169E49C700DA6546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56A06A5169E49C700DA6546 /* InfoPlist.strings in Resources */,
+				D56A06AB169E49C700DA6546 /* Credits.rtf in Resources */,
+				D56A06B1169E49C800DA6546 /* MainMenu.xib in Resources */,
+				D56A06F8169E8CB200DA6546 /* Preferences.xib in Resources */,
+				D5866834169FCE6400712129 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D56A0692169E49C700DA6546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56A06A7169E49C700DA6546 /* main.m in Sources */,
+				D56A06AE169E49C700DA6546 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D56A06A3169E49C700DA6546 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D56A06A4169E49C700DA6546 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D56A06A9169E49C700DA6546 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D56A06AA169E49C700DA6546 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D56A06AF169E49C800DA6546 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D56A06B0169E49C800DA6546 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D56A06C6169E49C800DA6546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D56A06C7169E49C800DA6546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D56A06C9169E49C800DA6546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalSignage/DigitalSignage-Prefix.pch";
+				INFOPLIST_FILE = "DigitalSignage/DigitalSignage-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D56A06CA169E49C800DA6546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalSignage/DigitalSignage-Prefix.pch";
+				INFOPLIST_FILE = "DigitalSignage/DigitalSignage-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D56A0690169E49C700DA6546 /* Build configuration list for PBXProject "DigitalSignage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56A06C6169E49C800DA6546 /* Debug */,
+				D56A06C7169E49C800DA6546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D56A06C8169E49C800DA6546 /* Build configuration list for PBXNativeTarget "DigitalSignage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56A06C9169E49C800DA6546 /* Debug */,
+				D56A06CA169E49C800DA6546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D56A068D169E49C700DA6546 /* Project object */;
+}
