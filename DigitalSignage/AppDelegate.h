@@ -20,5 +20,6 @@
 - (IBAction)reloadSign:(id)sender;
 - (IBAction)toggleMouse:(id)sender;
 - (IBAction)togglePlay:(id)sender;
+- (IBAction)toggleFullScreen:(id)sender;
 
 @end

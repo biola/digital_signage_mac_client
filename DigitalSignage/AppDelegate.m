@@ -32,15 +32,16 @@ static NSDictionary *defaultValues() {
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Set up default values for preferences managed by NSUserDefaultsController
+    [[NSUserDefaultsController sharedUserDefaultsController] setAppliesImmediately:YES];
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues()];
     [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:defaultValues()];
     
-    
-    [self.window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
-    
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:FullScreenLaunch]) {
-        [self.window toggleFullScreen:self];
+    // Add fullscreen support if supported (> 10.7)
+    if ([self.window respondsToSelector:@selector(toggleFullScreen:)]) {
+        [self.window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
     }
+    
+    [self toggleFullScreen:nil];
     if ([[NSUserDefaults standardUserDefaults] boolForKey:HideMouse]) {
         [NSCursor hide];
     }
@@ -61,6 +62,7 @@ static NSDictionary *defaultValues() {
     NSLog(@"Reloading Page");
     [[self.webView mainFrame] stopLoading];
     NSString *launchUrl = [[[NSUserDefaultsController sharedUserDefaultsController] values] valueForKey:LaunchUrl];
+    if (launchUrl == nil) { launchUrl = @"http://www.biola.edu"; }
     NSURL *url = [NSURL URLWithString:launchUrl];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView setFrameLoadDelegate:self];
@@ -77,6 +79,22 @@ static NSDictionary *defaultValues() {
 
 - (IBAction)togglePlay:(id)sender {
     [self.webView stringByEvaluatingJavaScriptFromString:@"togglePlay()"];
+}
+
+- (IBAction)toggleFullScreen:(id)sender {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:FullScreenLaunch]) {
+        // Use lion's built in full screen API if available
+        if ([self.window respondsToSelector:@selector(toggleFullScreen:)]) {
+            [self.window toggleFullScreen:self];
+        }
+        else {  // Add support for snow leapard
+            if ([self.webView isInFullScreenMode]) {
+                [self.webView exitFullScreenModeWithOptions:nil];
+            } else {
+                [self.webView enterFullScreenMode:[NSScreen mainScreen] withOptions:nil];
+            }
+        }
+    }
 }
 
 - (void)webView:(WebView *)sender didFailProvisionalLoadWithError:(NSError *)error forFrame:(WebFrame *)frame {
