@@ -103,5 +103,9 @@ static NSDictionary *defaultValues() {
 }
 
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
+}
+
 @end
 
