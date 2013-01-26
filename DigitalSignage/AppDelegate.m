@@ -97,11 +97,6 @@ static NSDictionary *defaultValues() {
     }
 }
 
-- (void)webView:(WebView *)sender didFailProvisionalLoadWithError:(NSError *)error forFrame:(WebFrame *)frame {
-    NSLog(@"Page failed to load. Scheduling Reload Timer");
-    [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(reloadSign:) userInfo:nil repeats:NO];
-}
-
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
     return YES;
